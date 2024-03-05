@@ -1,40 +1,71 @@
 * {
+    padding: 0;
+    margin: 0;
     background: #F3F5FC;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.7em;
     line-height: 150%;
-    
+}
+
+html{
+    height: 100%; 
+    width: 95%;
+}
+
+.logo {
+    display: flex;
+    padding-top: 2em;
+    margin-left: 4em;
+    height: 8%;
 }
 
 body {
     display: flex;
-    width: 100%;
     height: 100%;
+    width: 100%; 
 }
 
-.logo {
-    padding-top: 2em;
-    margin-left: 4em;
-    width: 10%;
-}
-
-main {
+.home {
     display: flex;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
+    height: 90%;
+    width: 100%; 
+    margin: 1% 5% 0;
+}
+
+
+.in_flex {
+    flex: 1;
+    min-width: 300px;
+    width: 40%;
+    padding: 25px;
+    height: 80%;
+}
+
+.in_flex:first-child {
+    flex: 2;
+    padding: 25px;
+    margin: 20px;
+    margin-top: 5%;
+    width: 45%;
+    height: 80%;
+}
+
+
+.entrada{
+  height: 100%;
 }
 
 .texto_ingresado {
+    width: 90%;
+    height: 60%;
     border: none;
     color: #0A3871;
-    margin-top: 4.5em;
-    margin-left: 1em;
-    margin-bottom: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 3%;
     text-transform: lowercase;
-
-}
-
-::placeholder {
+}::placeholder {
     color: #0A3871;
 }
 
@@ -42,17 +73,42 @@ main {
     outline: none;
 }
 
+.info_abajo{
+    width: 90%;
+    height: 20%;
+    margin-top: 5%;
+    background-color:#F3F5FC;;
+}
+
+.informacion {
+    margin-top: 0%;
+    padding-left: 2.1em;
+    color: #495057;
+    font-size:1em;
+}
+
 .botones {
-    display: flex;
-    padding-left: 1em;
-    margin-top: 10px;
+    padding: 2%;
+    width: 55em;
     height: 5em;
-    font-size: 0.5em;
-    width: 100%;
+    display: flex;
+    padding-left: 2em;
+    font-size: 0.6em;
+}
+
+#btn_encriptar {
+    height: 3em;
+    width: 30em;
+    background: #0A3871;
+    border: 0.01em solid #0A3871;
+    border-radius: 1.5em;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 #btn_desencriptar {
-    width: 22em;
+    height: 3em;
+    width: 30em;
     background: #D8DFE8;
     border: 0.01em solid #0A3871;
     border-radius: 1.5em;
@@ -61,40 +117,38 @@ main {
     margin-left: 30px;
 }
 
-#btn_encriptar {
-    width: 22em;
-    background: #0A3871;
-    border: 0.01em solid #0A3871;
-    border-radius: 1.5em;
-    color: #FFFFFF;
-    cursor: pointer;
+.salida {   
+    min-width: 90%;
+    margin-top: 1.3%;
+    margin-left: 10%;
+    background: #ffffff;
+    width:24em;
+    height:120%;
+    border-radius: 2em;
+    border: 2px solid #00000044;
 }
 
-.salida {   
-    margin: 2% 3% 0% 15%;
+.salida div{
     background: #FFFFFF;
-    width: 29.5em;
-    height: 27em;
-    border-radius: 2em;
-    align-items: center;
-    border: 1px solid #00000044;
 }
 
 .salida img {
     background: #FFFFFF;
     width: 60%;
-    margin: 5em 20% 0;
+    margin: 30% 20% 0;
 }
 
 .salida textarea {
     background: #FFFFFF;
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: center;
     font-weight: bold;
-    color: #343A40;
-    margin: 3% 4.5% 0;
+    color: #343440;
+    margin-left: 4.7%;
     border: none;
     max-width: 90%;
+    width: 90%;
+    margin-top: 10%;
 }
 
 .salida textarea:focus {
@@ -103,27 +157,135 @@ main {
 
 .salida h6 {
     text-align: center;
-    font-size: 0.6em;
+    font-size: 0.9em;
     background: #FFFFFF;
+    margin-top: 5%;
 }
 
 .copiar {
-    position: absolute;
-    top: 35em;
-    font-size: 0.7em;
+    background: #FFFFFF;
+    font-size: 0.9em;
     border: 0.01em solid #0A3871;
     border-radius: 1.5em;
     color: #0A3871;
     cursor: pointer;
-    height: 3.5em;
-    padding: auto;
-    margin: 0 0 0 2.5em;
-    position: absolute;
-    width: 22em;
+    height: 3.35em;
+    width: 80%;
+    margin: 0 10% 0;
+    margin-top:0%;
+    opacity: 0%;
 }
 
-.informacion {
-    padding-left: 7em;
-    color: #495057;
-    font-size: 0.6em;
+@media screen and (max-width: 800px) {
+    html{
+        width: 100%;
+        height: 100%;
+    }
+    body{
+        display: inline;
+        margin:3%;
+    }
+    header{
+     width: 40%;  
+    }
+    .home{
+        height: 100%;
+        width: 90%;
+    }
+    
+    .logo {
+        padding: 0%;
+        height: 8%;
+        margin: 3% 45% 0;
+    }
+    .in_flex {
+        margin: 0;
+        height: 40%;
+        padding: 0;
+        margin-top: 0%;
+    }
+
+    .in_flex:first-child {
+        padding: 0;
+        margin: 0;
+        margin-top: 10%;
+        height: 40%;
+    }
+
+    .entrada{
+        height: 90%;
+        width:90%;
+        margin: 0 5% 0;
+    }
+
+    .texto_ingresado {
+        width: 100%;
+        height: 60%;
+        text-align: center;
+    }
+    
+    .info_abajo{
+        width: 100%;
+        height: 15%;
+        margin: 0%;
+    }
+    
+    .informacion {
+        margin: 0;
+        margin-top: 0%;
+        padding-left:0;
+        margin-left: 20%;
+    }
+    
+    .botones {
+        padding: 4%;
+        width: 100%;
+        margin: 0%;
+        height: 70%;
+    }
+    
+    #btn_encriptar {
+        height: 3em;
+        width: 40%;
+    }
+    
+    #btn_desencriptar {
+        height: 3em;
+        width: 40%;
+        margin:0%;
+        margin-left: 10%;
+    }
+    
+    .salida{
+        margin: 0%;
+        height: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .salida img {
+        width: 60%;
+        margin: 0% 20% 0;
+    }
+    
+    .salida textarea {
+        margin-top: 0%;
+    }
+    
+    .salida h6 {
+        margin-top: 0%;
+    }
+    .salida div{
+        margin-top: 0%;
+        height: 20%;
+    }
+    .copiar {
+        font-size: 0.9em;
+        border: 0.01em solid #0A3871;
+        border-radius: 1.5em;
+        color: #0A3871;
+        cursor: pointer;
+        height: 3.35em;
+        width: 80%;
+        margin: 0% 10% 0%;
+    }
 }

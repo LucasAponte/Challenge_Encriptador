@@ -1,16 +1,19 @@
 const texto_entrante = document.querySelector(".texto_ingresado");
-
+const anchoVentana = window.innerWidth;
 
 
 function asignarTexto(texto) {
     let elementoHTML = document.querySelector(".salida textarea");
     elementoHTML.innerHTML = texto;
     elementoHTML.style.textAlign = 'left';
-    elementoHTML.style.marginTop = '4.5em';
+    anchoVentana < 800 ? elementoHTML.style.marginTop = '2em': elementoHTML.style.marginTop = '4.5em';; 
     elementoHTML.style.color = '#495057'
     elementoHTML.style.fontWeight = 'normal';
     elementoHTML.rows = 10;
-    elementoHTML.cols = 33;
+    elementoHTML.cols = 40;
+    elementoHTML = document.querySelector(".salida button");
+    elementoHTML.style.opacity =100;
+    anchoVentana < 800 ? elementoHTML.style.marginTop='0%': elementoHTML.style.marginTop='30%';
 }
 
 function btn_encriptar() {

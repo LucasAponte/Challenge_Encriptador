@@ -1,5 +1,7 @@
 const texto_entrante = document.querySelector(".texto_ingresado");
 const anchoVentana = window.innerWidth;
+const largoVentana = window.innerHeight;
+
 
 
 function asignarTexto(texto) {
@@ -13,9 +15,12 @@ function asignarTexto(texto) {
     elementoHTML.cols = 40;
     elementoHTML = document.querySelector(".salida button");
     elementoHTML.style.opacity =100;
-    anchoVentana < 700 ? elementoHTML.style.marginTop='1%': elementoHTML.style.marginTop='30%';
+    anchoVentana < 700 ? elementoHTML.style.marginTop='1%': elementoHTML.style.marginTop='20%';
+    if (largoVentana>700) {
+        elementoHTML.style.marginTop='20%'
+    }
     elementoHTML = document.querySelector(".salida div");
-    anchoVentana < 380 ? elementoHTML.style.marginTop='0%': elementoHTML.style.marginTop='25%';
+    anchoVentana < 380 ? elementoHTML.style.marginTop='0%':elementoHTML.style.marginTop='10%';
 }
 
 function btn_encriptar() {

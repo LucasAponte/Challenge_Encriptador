@@ -191,6 +191,7 @@ body {
     .home{
         height: 80%;
         width: 90%;
+        margin: 5%;
     }
     
     .logo {
@@ -202,27 +203,27 @@ body {
         margin: 0;
         height: 50%;
         padding: 0;
-        margin-top: 0%;
     }
 
     .in_flex:first-child {
         padding: 0;
         margin: 0;
-        margin-top: 10%;
+        margin-top: 5%;
         height: 40%;
     }
 
     .entrada{
         height: 90%;
         width:90%;
-        margin: 0 5% 0;
+        margin: 0 5% 10%;
     }
 
     .texto_ingresado {
         width: 100%;
-        height: 60%;
+        height: 50%;
         text-align: center;
-    }
+        margin-top: 0%;
+        }
     
     .info_abajo{
         width: 100%;
@@ -258,7 +259,8 @@ body {
     
     .salida{
         margin: 0%;
-        height: 100%;
+        width: 100%;
+        height: 120%;
         margin-bottom: 5%;
     }
     
@@ -276,7 +278,7 @@ body {
     }
     .salida div{
         margin-top: 0%;
-        height: 20%;
+        height: 15%;
     }
     .copiar {
         font-size: 0.9em;

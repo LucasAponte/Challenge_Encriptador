@@ -6,14 +6,16 @@ function asignarTexto(texto) {
     let elementoHTML = document.querySelector(".salida textarea");
     elementoHTML.innerHTML = texto;
     elementoHTML.style.textAlign = 'left';
-    anchoVentana < 800 ? elementoHTML.style.marginTop = '2em': elementoHTML.style.marginTop = '4.5em';; 
+    anchoVentana < 700 ? elementoHTML.style.marginTop = '1.5em': elementoHTML.style.marginTop = '4.5em';; 
     elementoHTML.style.color = '#495057'
     elementoHTML.style.fontWeight = 'normal';
-    elementoHTML.rows = 10;
+    anchoVentana < 700 ? elementoHTML.rows = 8: elementoHTML.rows = 10;
     elementoHTML.cols = 40;
     elementoHTML = document.querySelector(".salida button");
     elementoHTML.style.opacity =100;
-    anchoVentana < 800 ? elementoHTML.style.marginTop='0%': elementoHTML.style.marginTop='30%';
+    anchoVentana < 700 ? elementoHTML.style.marginTop='1%': elementoHTML.style.marginTop='30%';
+    elementoHTML = document.querySelector(".salida div");
+    anchoVentana < 380 ? elementoHTML.style.marginTop='0%': elementoHTML.style.marginTop='25%';
 }
 
 function btn_encriptar() {

@@ -13,11 +13,15 @@ function asignarTexto(texto) {
     elementoHTML.style.fontWeight = 'normal';
     anchoVentana < 700 ? elementoHTML.rows = 8: elementoHTML.rows = 10;
     elementoHTML.cols = 40;
+    elementoHTML = document.querySelector(".salida div");
+    elementoHTML.style.height="15%";
     elementoHTML = document.querySelector(".salida button");
+    elementoHTML.removeAttribute("disabled");
+    elementoHTML.style.cursor="pointer";
     elementoHTML.style.opacity =100;
     anchoVentana < 700 ? elementoHTML.style.marginTop='1%': elementoHTML.style.marginTop='20%';
     if (largoVentana>700) {
-        elementoHTML.style.marginTop='20%'
+        elementoHTML.style.marginTop='10%'
     }
     elementoHTML = document.querySelector(".salida div");
     anchoVentana < 380 ? elementoHTML.style.marginTop='0%':elementoHTML.style.marginTop='10%';
